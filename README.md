@@ -16,7 +16,7 @@
 
 ## Usage
 The main function *jffs* is employed to perform feature selection. You may switch the method by changing the 'rf' to [other abbreviations](/README.md#list-of-available-filter-feature-selection-methods)
-* If you wish to use Relief-F (RF) then you may write
+* If you wish to use Relief-F ( RF ) then you may write
 ```code
 FS = jffs('rf',feat,label,opts);
 ```
