@@ -1,7 +1,7 @@
 
 function RF = jReliefF(feat,label,opts)
 % Parameter
-K        = 5;
+K = 5;
 
 if isfield(opts,'Nf'), num_feat = opts.Nf; end
 if isfield(opts,'K'), K = opts.K; end
