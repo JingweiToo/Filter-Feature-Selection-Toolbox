@@ -2,8 +2,6 @@
 %colony optimization" (7)
 
 function TVFS = jTermVarianceFeatureSelection(feat,label,opts)
-% Parameter
-num_feat = fix(size(feat,2) / 2); 
 
 if isfield(opts,'Nf'), num_feat = opts.Nf; end
 
