@@ -44,12 +44,16 @@ FS = jffs('rf',feat,label,opts);
 % Parameters
 opts.K  = 3;     % number of nearest neighbors
 opts.Nf = 10;    % select 10 features
+
 % Load dataset
 load ionosphere.mat; 
+
 % Perform feature selection 
 FS     = jffs('rf',feat,label,opts);
+
 % Define index of selected features
 sf_idx = FS.sf;
+
 % Accuracy  
 kfold  = 5;
 Acc    = mSVM(feat(:,sf_idx),label,kfold);
