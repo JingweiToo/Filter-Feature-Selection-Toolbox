@@ -26,7 +26,7 @@ FS = jffs('rf',feat,label,opts);
 * feat   : feature vector matrix ( Instance x Features )
 * label  : label matrix ( Instance x 1 )
 * opts   : parameter settings
-    + Nf : number of selected features ( *for all methods* )
+    + Nf : number of selected features ( *must be set for all methods* )
 
 
 ## Output
