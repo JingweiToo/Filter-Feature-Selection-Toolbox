@@ -69,7 +69,7 @@ Acc    = mSVM(feat(:,sf_idx),label,kfold);
 
 ## List of available filter feature selection methods
 * The extra parameter represent the parameter other than number of selected features
-* Note : Relief-F contain extra parameter to be adjusted. If you do not set the parameter then the algorithm will be executed using default setting
+* Note : Relief-F contains extra parameter to be adjusted. If you do not set the parameter then the algorithm will be executed using default setting
 * You can use *opts* to set the parameter
     + K : number of nearest neighbors
 
