@@ -16,10 +16,10 @@ for d = 1:dim
   TV(d) = (1 / num_data) * sum((feat(:,d) - mu) .^ 2);
 end
 % Larger value offer better information
-[~, rank] = sort(TV,'descend');
+[~, idx] = sort(TV,'descend');
 % Select features based on selected positions 
-Sf        = rank(1:num_feat);
-sFeat     = feat(:, Sf);
+Sf       = idx(1:num_feat);
+sFeat    = feat(:, Sf);
 % Store results
 TVFS.sf = Sf; 
 TVFS.ff = sFeat; 

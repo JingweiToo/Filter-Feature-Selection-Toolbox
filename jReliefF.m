@@ -7,12 +7,12 @@ if isfield(opts,'Nf'), num_feat = opts.Nf; end
 if isfield(opts,'K'), K = opts.K; end
 
 % Convert format to categorical
-label          = categorical(label); 
+label         = categorical(label); 
 % Relief-F Algorithm
-[rank, weight] = relieff(feat,label,K);
+[idx, weight] = relieff(feat,label,K);
 % Select features based on ranking
-Sf             = rank(1:num_feat);
-sFeat          = feat(:, Sf); 
+Sf            = idx(1:num_feat);
+sFeat         = feat(:, Sf); 
 % Store results 
 RF.sf = Sf; 
 RF.ff = sFeat; 
