@@ -1,4 +1,3 @@
-
 function NCA = jNeighborhoodComponentAnalysis(feat,label,opts)
 
 if isfield(opts,'Nf'), num_feat = opts.Nf; end

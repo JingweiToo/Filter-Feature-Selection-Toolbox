@@ -1,4 +1,3 @@
-
 function RF = jReliefF(feat,label,opts)
 % Parameter
 K = 5;
