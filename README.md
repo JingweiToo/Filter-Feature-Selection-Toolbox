@@ -23,20 +23,20 @@ FS = jffs('rf',feat,label,opts);
 
 
 ## Input
-* feat   : feature vector matrix ( Instance x Features )
-* label  : label matrix ( Instance x 1 )
-* opts   : parameter settings
-    + Nf : number of selected features ( *must be set for all methods* )
+* *feat*   : feature vector matrix ( Instance *x* Features )
+* *label*  : label matrix ( Instance *x* 1 )
+* *opts*   : parameter settings
+    + *Nf* : number of selected features ( *must be set for all methods* )
 
 
 ## Output
-* Acc  : accuracy of validation model
-* FS   : feature selection model ( It contains several results )
-    + sf : index of selected features
-    + ff : selected features
-    + nf : number of selected features
-    + s  : weight / score
-    + t  : computational time (s)
+* *Acc*  : accuracy of validation model
+* *FS*   : feature selection model ( It contains several results )
+    + *sf* : index of selected features
+    + *ff* : selected features
+    + *nf* : number of selected features
+    + *s*  : weight / score
+    + *t*  : computational time (s)
     
 
 ### Example : Relief-F  ( RF ) 
