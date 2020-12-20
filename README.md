@@ -10,7 +10,6 @@
 ## Introduction
 
 * This toolbox contains 4 filter feature selection methods 
-
 * The < A_Main.m file > shows the example of how to use these filter feature selection on the benchmark dataset
 
 
@@ -57,7 +56,6 @@ sf_idx = FS.sf;
 % Accuracy  
 kfold  = 5;
 Acc    = mSVM(feat(:,sf_idx),label,kfold);
-
 ```
 
 
